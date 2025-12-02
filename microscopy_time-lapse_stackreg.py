@@ -102,5 +102,5 @@ def stack_reg_folder(input_path,
 
 # #### __StackReg__
 # * with __default params__
-stack_reg_folder(input_path= r"...\image_folder")
+stack_reg_folder(input_path= r".../image_folder")
 
