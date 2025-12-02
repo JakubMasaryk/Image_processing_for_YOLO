@@ -1,4 +1,4 @@
-# ## __StackReg for timelapse fluorescent microscopy__ 
+# ## __StackReg for timelapse fluorescent microscopy (1)__ 
 
 # #### __Description__
 # * __registration__ (alignment or stabilisation) of the __live-cell timelapse images__ to a common reference
