@@ -112,5 +112,5 @@ def stack_reg_video(input_path,
 
 # #### __StackReg__
 # * with __default params__
-stack_reg_video(input_path= r"C:\Users\Jakub\Desktop\test_video.avi")
+stack_reg_video(input_path= r"...video.avi")
 
