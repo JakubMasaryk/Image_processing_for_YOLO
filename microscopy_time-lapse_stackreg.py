@@ -1,6 +1,3 @@
-#!/usr/bin/env python
-# coding: utf-8
-
 # ## __StackReg for timelapse fluorescent microscopy (2)__ 
 
 # #### __Description__
@@ -23,10 +20,6 @@
 # >- __'mean'__
 
 # #### __Libraries__
-
-# In[17]:
-
-
 import cv2 as cv
 import numpy as np
 import os
@@ -36,10 +29,6 @@ from pystackreg import StackReg
 # --------------------------------------------------------------------------------
 
 # #### __StackReg Function__
-
-# In[62]:
-
-
 def stack_reg_folder(input_path,
                      reg_type= 'rigid_body',
                      reference= 'previous'):
@@ -113,9 +102,5 @@ def stack_reg_folder(input_path,
 
 # #### __StackReg__
 # * with __default params__
-
-# In[66]:
-
-
-stack_reg_folder(input_path= r"C:\Users\Jakub\Desktop\test_folder")
+stack_reg_folder(input_path= r"...\image_folder")
 
