@@ -1,6 +1,3 @@
-#!/usr/bin/env python
-# coding: utf-8
-
 # ## __Microscopy image watermarking__
 # 
 # * __labels microscopy image or registered video with GU logo__
@@ -11,10 +8,6 @@
 # * __Other Inputs:__ set to default, modify if needed
 
 # #### __Libraries__
-
-# In[1]:
-
-
 import cv2 as cv
 import numpy as np
 import os
@@ -25,19 +18,10 @@ get_ipython().run_line_magic('matplotlib', 'inline')
 # #### __Single Image__
 
 # * __inputs__
-
-# In[75]:
-
-
-image_path= r"C:\Users\Jakub\Desktop\CNN_training_images\class2_individual_aggregates\8bit_for_cvat_annotation\20240502_D17_s1_w2.TTimePoint_19.TIF"
-logo_path= r"C:\Users\Jakub\Documents\opencv_course_imgs\university_of_gothenburg_logo.jpg"
-
+image_path= r""
+logo_path= r""
 
 # * __function__
-
-# In[77]:
-
-
 def single_image_watermark(image_pathway, #path to input image
                            logo_pathway, #path to logo
                            logo_dimensions_x_y= (200, 200), #imprinted logo dimensions
@@ -125,31 +109,19 @@ def single_image_watermark(image_pathway, #path to input image
     else:
         return image
 
-
 # * __single-image watermarking__
-
-# In[79]:
-
-
 single_image_watermark(image_path, logo_path)
+
+
 
 
 # #### __Video__
 
 # * __inputs__
-
-# In[67]:
-
-
 video_path= r"C:\Users\Jakub\Documents\opencv_course_imgs\registered_test_video.avi"
 logo_path= r"C:\Users\Jakub\Documents\opencv_course_imgs\university_of_gothenburg_logo.jpg"
 
-
 # * __function__
-
-# In[90]:
-
-
 def video_watermark(video_pathway,
                     logo_pathway, #path to logo
                     logo_dimensions_x_y= (150, 150), #imprinted logo dimensions
@@ -256,17 +228,9 @@ def video_watermark(video_pathway,
     vid.release()
     video_output.release()
 
-
 # * __video watermarking__
-
-# In[64]:
-
-
 video_watermark(video_path,
                 logo_path)
-
-
-# In[ ]:
 
 
 
